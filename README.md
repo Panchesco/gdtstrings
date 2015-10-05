@@ -8,8 +8,8 @@ A go to plugin for when we need access to PHP string functions in templates.
 Test if a regular expression is true. 
 
 ##### Parameters
-string (required)
-regex (required)
+- string (required)
+- regex (required)
 
 ```
 {exp:gdtstrings:regexpt string="Short string to check against" regex="/[0-9]{1,}/"} 
@@ -25,7 +25,7 @@ Returns "1" if true; "0" if false;
 Convert a string to a lowercase alpha-dash string.
 
 ##### Parameters 
-string (required)
+- string (required)
 
 ``` 
 {exp:gdtsrings:slugged string="String to make into slug"} 
@@ -37,7 +37,7 @@ string (required)
 Convert bytes to kilobytes
 
 #### Parameters 
-bytes (required)
+- bytes (required)
 
 
 ```
@@ -48,7 +48,7 @@ bytes (required)
 ### mbytes
 
 #### Parameters 
-bytes (required)
+- bytes (required)
 
 Convert bytes to megabytes
 
@@ -63,7 +63,7 @@ Convert bytes to megabytes
 Strip HTML from text between tags
 
 ##### Paramters 
-allow  (optional) tags to allow
+- allow  (optional) tags to allow
 
 ```
 {exp:gdtstrings:stript allow="<br>"}
@@ -78,8 +78,8 @@ Replace a string of text whereever it occurs between tags.
 
 
 ##### Parameters 
-needle (required) string to search for
-replacement (optional) replacement string
+- needle (required) string to search for
+- replacement (optional) replacement string
 
 ```
 {exp:gdtstrings:replact needle="high-power" replacement="HIGH-POWER"}
