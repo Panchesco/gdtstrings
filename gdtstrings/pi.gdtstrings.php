@@ -44,7 +44,7 @@
 
 	$plugin_info = array(
 	    'pi_name'         => 'Good at Strings',
-	    'pi_version'      => '1.0.1',
+	    'pi_version'      => '1.1.1',
 	    'pi_author'       => 'Richard Whitmer/Godat Design, Inc.',
 	    'pi_author_url'   => 'http://godatdesign.com/',
 	    'pi_description'  => '
@@ -63,6 +63,16 @@
 			
 			// ------------------------------------------------------------------------
 			
+				/**
+			   *	Return tagdata as nl2br;
+			   *	@return string
+			   */
+			   public function nl2breakt()
+			   {
+				   return nl2br(ee()->TMPL->tagdata);  
+			   }
+			
+			// ------------------------------------------------------------------------
 			
 			/**
 			 *	Return tagdata with strip_tags.
@@ -199,6 +209,14 @@
 					TAG PAIRS:
 					----------------------------------------------------------------------------
 					
+					Use PHP's nl2br function on a block of text.
+					{exp:gdtstrings:nl2breakt}
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nisl, condimentum at magna ac, suscipit congue neque. Phasellus eleifend neque ullamcorper, tempor libero sed, sodales arcu. 
+					
+					Aenean quis metus condimentum, tincidunt lacus vel, pulvinar neque. Nulla eu fringilla enim. Donec vel tristique augue. In porttitor nibh nisi, at accumsan arcu sollicitudin vitae. Etiam at leo bibendum, rhoncus libero ut, porta odio. 
+					{/exp:gdtstrings:nl2breakt}
+					
+					
 					Strip HTML from text between tags
 					
 					{exp:gdtstrings:stript allow="br"}
@@ -218,6 +236,9 @@
 					Parameters: 
 					needle - string to replace  
 					replacement - replacement string
+					
+
+					
 					
 					<?php
 					 $buffer = ob_get_contents();

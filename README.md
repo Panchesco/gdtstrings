@@ -59,6 +59,16 @@ Convert bytes to megabytes
 
 ## Tag Pairs
 
+### nl2breakt
+Apply PHP nl2br function to text between tags.
+
+```
+{exp:gdtstrings:nl2breakt}
+Sweet dreams are made of this
+Who am I to disagree?			
+{/exp:gdtstrings:nl2breakt}
+```
+
 ### stript
 Strip HTML from text between tags
 
@@ -88,3 +98,7 @@ Replace a string of text whereever it occurs between tags.
 ```
 
 ---
+
+## Change Log
+
+ - 1.1.1 Added nl2breakt tag pair
