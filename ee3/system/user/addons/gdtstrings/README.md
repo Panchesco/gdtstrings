@@ -84,7 +84,7 @@ Strip HTML from text between tags
 
 ### replact
 
-Replace a string of text whereever it occurs between tags.
+Replace a string of text wherever it occurs between tags.
 
 
 ##### Parameters 
@@ -100,5 +100,7 @@ Replace a string of text whereever it occurs between tags.
 ---
 
 ## Change Log
+
+ - 2.0.0 Updated for EE3
 
  - 1.1.1 Added nl2breakt tag pair
