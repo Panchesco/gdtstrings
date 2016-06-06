@@ -149,6 +149,51 @@
 			    
 			
 			// ------------------------------------------------------------------------
+			
+			/**
+			    *	Convert a string to uppercase.
+			    *	@return string
+			    */
+			    public function str_to_upper()
+			    {
+			    	
+				    $value	= ee()->TMPL->fetch_param('string','');
+				    return  strtoupper(ee()->TMPL->fetch_param('string',''));
+				    
+			    }
+			    
+			
+			// ------------------------------------------------------------------------
+			
+			/**
+			    * Make a string's first character uppercase.
+			    * @return string
+			    */
+			    public function uc_first()
+			    {
+			    	
+				    $value	= ee()->TMPL->fetch_param('string','');
+				    return  ucfirst(ee()->TMPL->fetch_param('string',''));
+				    
+			    }
+			    
+			
+			// ------------------------------------------------------------------------
+			
+			/**
+			    * Uppercase the first character of each word in a string.
+			    * @return string
+			    */
+			    public function uc_words()
+			    {
+			    	
+				    $value	= ee()->TMPL->fetch_param('string','');
+				    return  ucwords(ee()->TMPL->fetch_param('string',''));
+				    
+			    }
+			    
+			
+			// ------------------------------------------------------------------------
 
 		
 	}
