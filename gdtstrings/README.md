@@ -1,6 +1,5 @@
 # Gdtstrings
-A go to plugin for when we need access to PHP string functions in templates.
-
+A go-to plugin for accessing PHP string functions in ExpressionEngine 3 templates.
 
 ## Single Tags
 
@@ -57,6 +56,20 @@ Convert bytes to megabytes
 ```
 ---
 
+### trunct
+
+Return trunctated version of string.
+
+##### Parameters 
+- chars - How many characters to show. Default is 72
+- ellipsis - string to use as replacement for truncated text. Default is ...
+- str - String to truncate
+
+``` 
+{exp:gdtsrings:trunct chars="12" str="Sweet dreams are made of this"} 
+```
+---
+
 ## Tag Pairs
 
 ### nl2breakt
@@ -100,7 +113,6 @@ Replace a string of text wherever it occurs between tags.
 ---
 
 ## Change Log
-
+ - 2.1.1 Addition of trunct tag
  - 2.0.0 Updated for EE3
-
  - 1.1.1 Added nl2breakt tag pair
