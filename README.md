@@ -1,7 +1,7 @@
 # Gdtstrings
 A go-to plugin for accessing PHP string functions in ExpressionEngine 3 templates.
 
-##Installation
+## Installation
  * Copy the gdtstrings folder to /system/user/addons
  * Enable in the Add-on manager
 
